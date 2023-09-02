@@ -32,6 +32,7 @@ private:
 	};
 	//freelist指针数组，每个元素为指向指定对齐大小内存的freelist
 	static obj* free_list[NFREELISTS];
+
 private:
 	static char* start_free;
 	static char* end_free;
