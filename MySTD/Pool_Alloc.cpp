@@ -1,5 +1,11 @@
 #include "Pool_Alloc.h"
 
+
+char* PoolAlloc::start_free = nullptr;
+char* PoolAlloc::end_free = nullptr;
+size_t PoolAlloc::heap_size = 0;//这是？？
+PoolAlloc::obj* PoolAlloc::free_list[PoolAlloc::NFREELISTS]{};
+
 void* PoolAlloc::refill(size_t bytes)
 {
 	size_t nobjs = NOBJS;//表示实际申请了多少块
