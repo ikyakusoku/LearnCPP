@@ -127,11 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="MyVector.h" />
+    <ClInclude Include="Pool_Alloc.h" />
     <ClInclude Include="SafeQueue.h" />
     <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="_M_Tuple.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Pool_Alloc.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
